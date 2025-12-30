@@ -31,8 +31,8 @@ The loop never stops so you can do other things while the LED is blinking.
 This program uses the [mdb_flash](https://github.com/AragrnMDB/mdb_flash.git "mdb_flash.git") library
 (which uses the [mdb_timer](https://github.com/AragrnMDB/mdb_timer.git "mdb_timer.git") library) to implement the blinking.
 The library keeps track of the duration of the flash and the state of the flash. All that is needed is the call to the
-constructor, one statement in setup() and some logic in the loop to determine when to flash again. Kind of a forced example.
-A better usage would be to flash the LED when something occurs.  
+constructor, one statement in setup() and some logic in the loop to determine when to flash again. Updated to flash
+to a button press.
 
 ## SimpleBlinkWithDebounce
 
