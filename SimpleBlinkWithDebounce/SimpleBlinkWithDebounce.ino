@@ -7,6 +7,7 @@ mdb_debounce debouncedOn(onButton,  INPUT_PULLUP, 20); // Debounced input for on
 void setup() {                                  // Setup function runs once
   pinMode(led,    OUTPUT);
   digitalWrite(led, LOW);                       // Turn the led off
+  debouncedOn.begin();
 }
 
 void loop() {

@@ -15,6 +15,7 @@ mdb_debounce debouncedFlash(flashButton, INPUT_PULLUP, 20);  // Debounced input 
 
 void setup() {
   mdbFlash.startFlash();
+  debouncedFlash.begin();
 }
 
 void loop() {
