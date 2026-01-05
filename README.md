@@ -32,7 +32,7 @@ This program uses the [mdb_digitalOut](https://github.com/AragrnMDB/mdb_digitalO
 (which uses the [mdb_timer](https://github.com/AragrnMDB/mdb_timer.git "mdb_timer.git") library) to implement the blinking.
 The library keeps track of the duration of the flash and the state of the flash. All that is needed is the call to the
 constructor, one statement in setup() and some logic in the loop to determine when to flash again. Updated to flash
-to a button press using the [mdb_digitalIn](https://github.com/AragrnMDB/mdb_digitalIn.git "mdb_digitalIn.git) library
+to a button press using the [mdb_digitalIn](https://github.com/AragrnMDB/mdb_digitalIn.git "mdb_digitalIn.git") library
 which also uses the mdb_timer library.  
 
 ## SimpleBlinkWithDebounce
