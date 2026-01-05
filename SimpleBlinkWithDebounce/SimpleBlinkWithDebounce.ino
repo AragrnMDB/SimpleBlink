@@ -1,8 +1,9 @@
-#include <mdb_debounce.h>                       // Include my debounce library
+// Include for mdb_digitalIn
+#include <mdb_digitalIn.h>                       // Include my debounce library
 
 uint8_t led               = 13;                 // Define the led pin
 uint8_t onButton          = 7;                  // Define the on button pin (pinmode set in debounce)
-mdb_debounce debouncedOn(onButton,  INPUT_PULLUP, 20); // Debounced input for onButton
+mdb_digitalIn debouncedOn(onButton,  INPUT_PULLUP, 20); // Debounced input for onButton
 
 void setup() {                                  // Setup function runs once
   pinMode(led,    OUTPUT);

@@ -19,7 +19,7 @@ The loop never stops so you can do other things while the LED is blinking.
 
 ## SimpleBlinkWithBlink
 
-This program uses the [mdb_blink](https://github.com/AragrnMDB/mdb_blinkr.git "mdb_blink.git") library
+This program uses the [mdb_digitalOut](https://github.com/AragrnMDB/mdb_blinkr.git "mdb_digitalOut.git") library
 (which uses the [mdb_timer](https://github.com/AragrnMDB/mdb_timer.git "mdb_timer.git") library) to implement the blinking.
 The library keeps track of the status of the LED and the on and off durations. All that is needed is the call to the
 constructor, one statement in setup() and one statement in loop().  
@@ -28,11 +28,12 @@ The loop never stops so you can do other things while the LED is blinking.
 
 ## SimpleBlinkWithFlash
 
-This program uses the [mdb_flash](https://github.com/AragrnMDB/mdb_flash.git "mdb_flash.git") library
+This program uses the [mdb_digitalOut](https://github.com/AragrnMDB/mdb_digitalOut.git "mdb_digitalOut.git") library
 (which uses the [mdb_timer](https://github.com/AragrnMDB/mdb_timer.git "mdb_timer.git") library) to implement the blinking.
 The library keeps track of the duration of the flash and the state of the flash. All that is needed is the call to the
 constructor, one statement in setup() and some logic in the loop to determine when to flash again. Updated to flash
-to a button press.
+to a button press using the [mdb_digitalIn](https://github.com/AragrnMDB/mdb_digitalIn.git "mdb_digitalIn.git) library
+which also uses the mdb_timer library.  
 
 ## SimpleBlinkWithDebounce
 

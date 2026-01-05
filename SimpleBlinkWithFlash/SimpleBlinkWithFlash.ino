@@ -1,19 +1,20 @@
-// Include for mdb_flash
-#include <mdb_flash.h>
-#include <mdb_debounce.h>
+// Includes for mdb_digitalIn and mdb_digitalOut
+#include <mdb_digitalIn.h>
+#include <mdb_digitalOut.h>
 
 uint8_t led = 13;
 unsigned long onDuration = 50;
 
 // Create the flasher instance
-mdb_flash mdbFlash(led, onDuration);
+mdb_digitalOut mdbFlash(led, onDuration);
 
 uint8_t flashButton = 6;                                     // Define the flash button pin (pinmode set in debounce)
 bool flashFlag = false;                                      // True if flashing
 bool lastFlash = false;                                      // True if flash button has already been noted
-mdb_debounce debouncedFlash(flashButton, INPUT_PULLUP, 20);  // Debounced input for offButton
+mdb_digitalIn debouncedFlash(flashButton, INPUT_PULLUP, 20); // Debounced input for offButton
 
 void setup() {
+  mdbFlash.begin();
   mdbFlash.startFlash();
   debouncedFlash.begin();
 }
