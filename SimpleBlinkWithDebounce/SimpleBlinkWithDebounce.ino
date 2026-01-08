@@ -12,7 +12,7 @@ void setup() {                                  // Setup function runs once
 }
 
 void loop() {
-  if (debouncedOn.inputState()) {               // If the ON button is pressed
+  if (debouncedOn.momentary()) {                // If the ON button is pressed
     digitalWrite(led, HIGH);
   } else {                                      // Else
     digitalWrite(led, LOW);

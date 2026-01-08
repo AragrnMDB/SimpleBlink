@@ -10,6 +10,7 @@ unsigned long offTime = 500;
 mdb_timer mdbTimer; // Call the default mdb_timer constructor with no parameters and therefore no ()
 
 void setup() {
+  mdbTimer.begin();
   pinMode(led,    OUTPUT);
   digitalWrite(led, ledState);
 }
